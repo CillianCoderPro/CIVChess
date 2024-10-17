@@ -63,6 +63,8 @@ th, td {
 	font-weight: bold;
 }
 
+
+
 .special-cell::before,
 .special-cell-EEchecs::before,
 .special-cell-CIV::before,
@@ -154,6 +156,35 @@ th, td {
 }
 
 
+/* The hidden link that shows up on hover */
+.special-cell-CIV a.hover-link {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned relative to the table cell */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the box */
+    background-color: white;
+    padding: 10px;
+    border: 4px solid #650D1B;
+    color: #650D1B;
+    z-index: 2;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Show the hidden link box when hovering over the td */
+.special-cell-CIV:hover a.hover-link {
+    display: block; /* Make the box visible */
+    cursor: pointer;
+}
+
+/* Dynamically add text content inside the white hover box */
+.special-cell-CIV:hover a.hover-link::before {
+    content: "CIV E-Chess Championship"; /* The text inside the white box */
+}
+
+
+
 <!----------------------------------------Infos---------------------------------------------------!>
 
 
@@ -234,12 +265,11 @@ th, td {
 
 /* ---- Link Styles ---- */
 a:link {
-    color: #000000;
 	text-decoration: none;
 }
 
 a:visited {
-    color: #696969;
+    text-decoration: none;
 }
 
 a:hover {
@@ -248,5 +278,5 @@ a:hover {
 }
 
 a:active {
-    color: #650D1B;
+    text-decoration: none;
 }
