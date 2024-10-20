@@ -54,6 +54,7 @@ th, td {
 .special-cell-CIV,
 .special-cell-N3,
 .special-cell-cannes-R1,
+.special-cell-1800,
 .special-cell-jan-19,
 .special-cell-mar-16,
 .special-cell-mar-30,
@@ -70,6 +71,7 @@ th, td {
 .special-cell-CIV::before,
 .special-cell-N3::before,
 .special-cell-cannes-R1::before,
+.special-cell-1800::before,
 .special-cell-jan-19::before,
 .special-cell-mar-16::before,
 .special-cell-mar-30::before,
@@ -94,6 +96,15 @@ th, td {
 
 .special-cell-cannes-R1:hover::before {
     content: "R1 Cannes";
+    background-color: white;
+    padding: 10px;
+    border: 4px solid #650D1B;
+    color: #650D1B;
+    z-index: 2;
+}
+
+.special-cell-1800:hover::before {
+    content: "JC Laboutière -1800";
     background-color: white;
     padding: 10px;
     border: 4px solid #650D1B;
