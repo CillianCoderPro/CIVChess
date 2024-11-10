@@ -50,6 +50,7 @@ th, td {
 
 /* -------------------------------------- Special Cell Styles -------------------------------------------- */
 .special-cell,
+.special-cell-Rapide-Cannes,
 .special-cell-EEchecs,
 .special-cell-CIV,
 .special-cell-N3,
@@ -64,9 +65,8 @@ th, td {
 	font-weight: bold;
 }
 
-
-
 .special-cell::before,
+.special-cell-Rapide-Cannes::before,
 .special-cell-EEchecs::before,
 .special-cell-CIV::before,
 .special-cell-N3::before,
@@ -83,6 +83,15 @@ th, td {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+.special-cell-Rapide-Cannes:hover::before {
+    content: "Rapide Cannes";
+    background-color: white;
+    padding: 10px;
+    border: 4px solid #650D1B;
+    color: #650D1B;
+    z-index: 2;
 }
 
 .special-cell-oct-13:hover::before {
@@ -157,7 +166,7 @@ th, td {
     z-index: 2;
 }
 
-.special-cell-EEches:hover::before {
+.special-cell-EEchecs:hover::before {
     content: "UNSS E-Echecs";
     background-color: white;
     padding: 10px;
